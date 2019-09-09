@@ -1,0 +1,42 @@
+.swp_social_panelSide {
+    margin: 80px 5px!important;
+}
+
+.swp_social_panel.swp_default_full_color a {
+     color: #d5aca6 !important;
+}
+
+.swp_social_panel.swp_default_full_color .swp_facebook, html body .swp_social_panel.swp_individual_full_color .swp_facebook:hover, body .swp_social_panel.swp_other_full_color:hover .swp_facebook {
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.swp_social_panel.swp_default_full_color .swp_google_plus, html body .swp_social_panel.swp_individual_full_color .swp_google_plus:hover, body .swp_social_panel.swp_other_full_color:hover .swp_google_plus {
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.swp_social_panel.swp_default_full_color .swp_twitter, html body .swp_social_panel.swp_individual_full_color .swp_twitter:hover, body .swp_social_panel.swp_other_full_color:hover .swp_twitter {
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.swp_social_panel.swp_default_full_color .swp_pinterest, html body .swp_social_panel.swp_individual_full_color .swp_pinterest:hover, body .swp_social_panel.swp_other_full_color:hover .swp_pinterest {
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.swp_social_panelSide.fade.swp_float_left {
+    left: -10px !important;
+}
+
+.swp_social_panelSide .nc_tweetContainer {
+    width: 80px !important;
+}
+
+.swp_social_panelSide .nc_tweetContainer[data-network]:not(.total_shares):hover .iconFiller {
+    color: #d6b69e;
+}
+
+<!--Cached using Nginx-Helper on 2019-02-18 12:56:21. It took 51 queries executed in 0.396 seconds.-->
+<!--Visit http://wordpress.org/extend/plugins/nginx-helper/faq/ for more details-->

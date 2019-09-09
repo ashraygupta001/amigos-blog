@@ -1,0 +1,62 @@
+<?php
+                                    $mysqli = new mysqli('localhost', 'root', 'ashraygupta', 'webkriti');
+                                    $query="SELECT * FROM users,posts WHERE id=user_id ORDER BY postID desc LIMIT 4";
+                                    $data = mysqli_query($mysqli,$query);
+                                         while($row = mysqli_fetch_assoc($data)) {
+                                    $content=$row['postCont'];
+                                    $username=$row['username'];
+                                    $title=$row['postTitle'];
+                                    $image=$row['postimage'];
+                                    ?>     
+        <div class="container">
+            <div class="images2">
+                        <a href="#" id="id15" class="id15">
+                                <div class="thumbnail">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                    <img src="<?php echo $image;?>" class="img-responsive img-rounded">
+                                    <p> <?php echo $title; ?> </p>
+                                    </div>
+                                </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <?php
+       }
+       ?>
+    <?php
+                                    $mysqli = new mysqli('localhost', 'root', 'ashraygupta', 'webkriti');
+                                    $query="SELECT * FROM users,posts WHERE id=user_id ORDER BY postID desc LIMIT 4";
+                                    $data = mysqli_query($mysqli,$query);
+                                         while($row = mysqli_fetch_assoc($data)) {
+                                    $content=$row['postCont'];
+                                    $username=$row['username'];
+                                    $title=$row['postTitle'];
+                                    $image=$row['postimage'];
+                                    ?>     
+    <div class="recent2">
+        <div class="recent3">
+            <div class="closea">+</div>
+            <div class="row">
+                <img src="<?php echo $image;?>" class="img-responsive img-rounded"width="350"height="380"style="float:left;
+                 margin-right:10px; margin-botton:5px;position:relative;top:20%;">
+                <h3><b> 
+                       <?php echo $title; ?>
+                </b></h3>
+                <p> <?php echo $content; ?></p>
+            </div>
+        </div>
+    </div>
+     <?php
+       }
+       ?>
+         <script>
+        document.getElementById('id15').addEventListener("click", function() {
+	document.querySelector('.recent2').style.display = "flex";
+});
+
+document.querySelector('.closea').addEventListener("click", function() {
+	document.querySelector('.recent2').style.display = "none";
+});
+</script>

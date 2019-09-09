@@ -1,0 +1,1 @@
+jQuery(function($){$('#trigger-overlay').click(function(){$('.tpd-overlay .searchform input[type="text"]').focus();})});
